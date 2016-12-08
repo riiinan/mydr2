@@ -65,7 +65,7 @@ public class MyDr_find_patients extends JFrame {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JButton btnHae = new JButton("Hae");
+		JButton btnHae = new JButton("Valitse");
 		btnHae.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try{
@@ -80,7 +80,7 @@ public class MyDr_find_patients extends JFrame {
 				
 			}
 		});
-		btnHae.setBounds(206, 57, 89, 23);
+		btnHae.setBounds(462, 243, 89, 23);
 		frame.getContentPane().add(btnHae);
 		
 		JTextPane txtpnHaePotilastaNimell = new JTextPane();
