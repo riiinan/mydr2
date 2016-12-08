@@ -69,10 +69,6 @@ public class MyDr_find_patients extends JFrame {
 		btnHae.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try{
-					String query="select * from  PatientInfo";
-					PreparedStatement pst=connection.prepareStatement(query);
-					ResultSet rs=pst.executeQuery();
-					table_1.setModel(DbUtils.resultSetToTableModel(rs));
 					frame.dispose();//h‰vitt‰‰ vanhan sivun 
 					MyDr_patientview patientview = new MyDr_patientview(); //tekee olion seuraavaksi avattavasta framesta
 					patientview(true);//asettaa n‰kym‰n olioon
