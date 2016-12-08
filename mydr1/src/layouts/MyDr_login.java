@@ -42,6 +42,7 @@ public class MyDr_login {
 	 */
 	public MyDr_login() {
 		initialize();
+		connection=sqliteConnection.dbConnector();
 	}
 
 	/**
@@ -73,10 +74,10 @@ public class MyDr_login {
 						count++;
 					}
 					if(count == 1){
-						JOptionPane.showMessageDialog(null, "Username and password corresct");
-						frame.dispose();
-						MyDr_start_view startview = new MyDr_start_view();
-						startview.setVisible(true);
+						JOptionPane.showMessageDialog(null, "Username and password correct");
+						frame.dispose();//hävittää vanhan sivun 
+						MyDr_start_view startview = new MyDr_start_view(); //tekee olion seuraavaksi avattavasta framesta
+						startview.setVisible(true);//asettaa näkymän olioon
 					}else if(count > 1){
 						JOptionPane.showMessageDialog(null, "Duplicate username and password");
 					}else{
