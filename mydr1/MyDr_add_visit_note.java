@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JScrollBar;
 import javax.swing.JTextField;
 
-public class MyDr_add_visit_note {
+public class MyDr_add_visit_note extends JFrame{
 
 	private JFrame frame;
 	private JTextField doctorNameField;
@@ -48,6 +48,7 @@ public class MyDr_add_visit_note {
 	 */
 	public MyDr_add_visit_note() {
 		initialize();
+		connection=sqliteConnection.dbConnector();
 	}
 
 	/**
